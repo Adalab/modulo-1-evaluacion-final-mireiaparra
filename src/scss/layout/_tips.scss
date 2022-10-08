@@ -6,7 +6,7 @@
 
     &__text {
         font-family: $fontMain;
-        color: $reasonsBackground;
+        color: $tipsText;
         font-size: 14px;
         text-transform: capitalize;
         margin-top: 63px;
@@ -37,7 +37,7 @@
         font-size: 20px;
         color: $button;
         background-color: $tipsBackground;
-        border-radius: 40%;
+        border-radius: 22.5px;
         border: 2px solid $button;
         margin-bottom: 45px;
         
