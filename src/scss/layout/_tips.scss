@@ -1,1 +1,45 @@
+.tips {
+    width: 100vw;
+    background-color: $tipsBackground;
+    margin-left: 15px;
+    margin-right: 15px;
 
+    &__text {
+        font-family: $fontMain;
+        color: $reasonsBackground;
+        font-size: 14px;
+        text-transform: capitalize;
+        margin-top: 63px;
+        margin-bottom: 23px;
+    }
+
+    &__title {
+        font-family: $fontTitles;
+        color: $title;
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-family: $fontMain;
+        color: $description;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 26px;
+    }
+
+    &__button {
+        height: 45px;
+        width: 76px;
+        font-family:$fontMain;
+        font-weight: 500;
+        font-size: 20px;
+        color: $button;
+        background-color: $tipsBackground;
+        border-radius: 40%;
+        border: 2px solid $button;
+        margin-bottom: 45px;
+        
+    }
+}
