@@ -1,5 +1,40 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  height: 543px;
+  width: 100vw;
+  background-image: url("../images/cover.jpeg");
+  background-size: cover;
+  background-position-x:center;
+  text-align: center;
+
+      &__menu {
+        background-color: $burgerButton;
+        height: 22px;
+        width: 32px;
+      }
+
+      &__title {
+        color: $tipsBackground;
+        font-family: $fontTitles;
+        font-weight: bold;
+        font-size: 42px;
+        text-transform: uppercase;
+        margin-top: 300px;
+      }
+
+      &__description {
+        color: $tipsBackground;
+        font-family: $fontMain;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      &__button {
+        background-color: $tipsBackground;
+        width: 38px;
+        height: 37px;
+        border-radius: 50%;
+        line-height: 37px;
+        margin-top: 35px;
+      }
+
 }
