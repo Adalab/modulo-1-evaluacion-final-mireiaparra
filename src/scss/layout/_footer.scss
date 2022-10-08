@@ -1,0 +1,34 @@
+.footer {
+    background-color: $footerBackground;
+    font-family: $fontMain;
+    font-size: 16px;
+    color: $tipsBackground;
+    text-align: center;
+    
+
+    &__button {
+        width: 45px;
+        height: 45px;
+        background-color: $tipsBackground;
+        border-radius: 50%;
+        border: 1px solid $tipsBackground;
+        transform: translateY(-50%);
+        object-fit: contain;
+    }
+
+    &__nav {
+        text-transform: uppercase;
+        line-height: 30px;
+        padding-bottom: 32px;
+       
+
+        &--first {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__copy {
+        padding-bottom: 36px;
+        line-height: 30px;
+    }
+}
