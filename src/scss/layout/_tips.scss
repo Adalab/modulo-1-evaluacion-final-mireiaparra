@@ -1,72 +1,87 @@
 .tips {
-    
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &__text {
+    font-family: $fontMain;
+    color: $tipsText;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 62px;
+    margin-bottom: 23px;
+  }
+
+  &__title {
+    font-family: $fontTitles;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-family: $fontMain;
+    color: $description;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
+
+  &__button {
+    height: 45px;
+    width: 76px;
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 20px;
+    color: $button;
     background-color: $tipsBackground;
-    margin-left: 15px;
-    margin-right: 15px;
-    display:flex;
-    flex-direction: column;
-   
-   
-
-    &__text {
-        font-family: $fontMain;
-        color: $tipsText;
-        font-size: 14px;
-        text-transform: capitalize;
-        margin-top: 62px;
-        margin-bottom: 23px;
-    }
-
-    &__title {
-        font-family: $fontTitles;
-        color: $title;
-        font-size: 24px;
-        text-transform: capitalize;
-        margin-bottom: 20px;
-    }
-
-    &__description {
-        font-family: $fontMain;
-        color: $description;
-        font-size: 18px;
-        line-height: 30px;
-        margin-bottom: 26px;
-    }
-
-    &__button {
-        height: 45px;
-        width: 76px;
-        font-family:$fontMain;
-        font-weight: 500;
-        font-size: 20px;
-        color: $button;
-        background-color: $tipsBackground;
-        border-radius: 22.5px;
-        border: 2px solid $button;
-        margin-bottom: 45px;
-        
-    }
+    border-radius: 22.5px;
+    border: 2px solid $button;
+    margin-bottom: 45px;
+  }
 }
 
 @media all and (min-width: 768px) {
+  .tips {
+    margin-left: 39px;
+    margin-right: 39px;
 
-    .tips {
-      margin-left: 39px;
-        margin-right: 39px;
-        
-        &__title {
-            font-size: 26px;
-            margin-bottom: 27px;
-        }
+    &__title {
+      font-size: 26px;
+      margin-bottom: 27px;
+    }
 
-        &__description {
-            font-size: 20px;
-            margin-bottom: 27px;
-        }
+    &__description {
+      font-size: 20px;
+      margin-bottom: 27px;
+    }
 
-        &__button {
-    
-            margin-bottom: 60px;
-            
-        }
-}}
+    &__button {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .tips {
+    margin-left: 39px;
+    margin-right: 39px;
+
+    &__text {
+      font-size: 16px;
+      text-transform: capitalize;
+      margin-top: 65px;
+      margin-bottom: 26px;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__button {
+      width: 160px;
+    }
+  }
+}

@@ -1,56 +1,111 @@
 .reasons {
-    width: 100vw;
-    background-color: $reasonsBackground;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 100vw;
+  background-color: $reasonsBackground;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 44px;
 
+  &__firstTitle {
+    font-family: $fontTitles;
+    // font-weight: bold;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 5px;
+  }
 
-
-
-    &__title  {
-        font-family: $fontTitles;
-        font-weight: bold;
-        font-size: 24px;
-        text-transform: capitalize;
-padding: 29px 15px 49px 15px;
-
+  &__article {
+    text-align: center;
+  
+    &--title {
+      font-family: $fontTitles;
+      // font-weight: bold;
+      font-size: 18px;
+      line-height: 1.67;
+      margin-left: 68px;
+      margin-right: 68px;
+      margin-bottom: 1px;
     }
-
-    &__button {
-        width: 184px;
-        height: 45px;
-        background-color: $button;
-        color: $tipsBackground;
-        font-family: $fontMain;
-        font-size: 20px;
-        font-weight: 500;
-        border-radius: 22.5px;
-        border: 1px solid $button;
-        margin-bottom: 60px;
-        margin-left: 68px;
-
+  
+    &--description {
+      font-family: $fontMain;
+      font-size: 18px;
+      // font-weight: normal;
+    //   margin-bottom: 44px;
+      margin-left: 70px;
+      margin-right: 70px;
     }
+  }
+
+  &__button {
+    width: 184px;
+    height: 45px;
+    background-color: $button;
+    color: $tipsBackground;
+    font-family: $fontMain;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 22.5px;
+    border: 1px solid $button;
+    margin-top: -3px;
+    margin-bottom: 60px;
+    margin-left: 68px;
+  }
 }
 
 
-.article {
+
+@media all and (min-width: 768px) {
+.reasons {
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 27.7px;
+  row-gap: 0;
+  padding-left: 35.7px;
+  padding-right: 40px;
+
+
+  &__firstTitle {
+    grid-column: 1/4;
+    // font-weight: bold;
+    font-size: 26px;
+    margin-top: 36px;
+    margin-bottom: 38px;
+  }
+
+  &__article {
+    // margin: 18px 40px 57px 35.7px;
+    &--title {
+
+      // font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 18px;
+    }
   
+    &--description {
+      font-size: 20px;
+      // font-weight: normal;
+        margin: 0;
+    }
+  }
 
-     &__title {
-        font-family: $fontTitles;
-        font-weight: bold;
-        font-size: 18px;
-        margin-left: 68px;
-        margin-right: 68px;
-        margin-bottom: 1px;
-     }
 
-     &__description {
-        font-family: $fontMain;
-        font-size: 18px;
-    margin-bottom: 44px;
-margin-left: 70px;
-margin-right: 70px;
-     }
+  &__button {
+    grid-column: 1/4;
+    width: 210px;
+    margin-top: 57px;
+    margin-left: 242.3px;
+
+  }
+}
+}
+
+
+@media all and (min-width: 1200px) {
+    
 }

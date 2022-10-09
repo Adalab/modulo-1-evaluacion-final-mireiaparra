@@ -1,18 +1,40 @@
 .header__menu {
   background-color: $burgerButton;
   height: 22px;
-  width: 32px;
+  width: 37.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  left: 0;
+  margin-top: -2px;
+  padding-bottom: 12.3px;
+
+  &--img {
+    width: 13.5px;
+    height: 9.7px;
+  }
 }
 
 @media all and (min-width: 768px) {
-
   .header__menu {
     height: 44px;
     width: 41.6px;
-    padding: 12px 5px;
-    
-  }
+    margin-top: 0;
+    padding-bottom: 0;
 
+    &--img {
+      width: 15.1px;
+      height: 14px;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .header__menu {
+    width: 44px;
+
+    &--img {
+      width: 16px;
+    }
+  }
 }
