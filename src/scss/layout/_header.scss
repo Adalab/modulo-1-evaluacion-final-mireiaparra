@@ -1,41 +1,18 @@
-.header {
-  height: 543px;
-  width: 100vw;
-  background-image: url("../images/cover.jpeg");
-  background-size: cover;
-  background-position-x:center;
-  text-align: center;
+.header__menu {
+  background-color: $burgerButton;
+  height: 22px;
+  width: 32px;
+  position: fixed;
+  left: 0;
+}
 
-      &__menu {
-        background-color: $burgerButton;
-        height: 22px;
-        width: 32px;
-      }
+@media all and (min-width: 768px) {
 
-      &__title {
-        color: $tipsBackground;
-        font-family: $fontTitles;
-        font-weight: bold;
-        font-size: 42px;
-        text-transform: uppercase;
-        margin-top: 300px;
-      }
-
-      &__description {
-        color: $tipsBackground;
-        font-family: $fontMain;
-        font-size: 16px;
-        margin-top: 20px;
-      }
-
-      &__button {
-        background-color: $tipsBackground;
-        width: 38px;
-        height: 37px;
-        border-radius: 50%;
-        margin-top: 35px;
-       line-height: 37px;
-        border: 1px solid $tipsBackground;
-      }
+  .header__menu {
+    height: 44px;
+    width: 41.6px;
+    padding: 12px 5px;
+    
+  }
 
 }
