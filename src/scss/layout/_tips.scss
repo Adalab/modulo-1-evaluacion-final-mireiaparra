@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   // margin: 61.9px, 15px, 45px, 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+ padding-left: 15px;
+padding-right: 15px;
 
   &__text {
     font-family: $fontMain;

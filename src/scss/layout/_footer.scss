@@ -2,15 +2,20 @@
   background-color: $footerBackground;
   font-family: $fontMain;
   color: $tipsBackground;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
 
   &__flex {
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 30px;
     text-transform: uppercase;
     line-height: 30px;
-    padding-top: 65px;
+  
     padding-bottom: 36px;
 
     &--link {
@@ -28,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(320%, -50%);
+    transform: translateY(-50%);
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
 
@@ -40,6 +45,7 @@
   &__copy {
     padding-top: 2px;
     text-transform: lowercase;
+    font-size: 14px;
 
     &--heart {
       color: $button;
@@ -51,12 +57,12 @@
   .footer {
     &__flex {
       flex-direction: row;
-      justify-content: space-between;
+      gap: 148px;
       text-align: left;
-      padding-top: 50px;
+      padding-top: 18px;
       padding-bottom: 40px;
-      padding-left: 39px;
-      padding-right: 39px;
+      padding-left: 52px;
+      padding-right: 81px;
 
       &--first,
       &--second {
@@ -64,9 +70,6 @@
       }
     }
 
-    &__button {
-      transform: translate(820%, -50%);
-    }
 
     &__copy {
       order: 1;
@@ -81,9 +84,5 @@
       padding-left: 370px;
       padding-right: 370px;
     }
-
-    &__button {
-      transform: translate(1300%, -50%);
-    }
-  }
+}
 }
