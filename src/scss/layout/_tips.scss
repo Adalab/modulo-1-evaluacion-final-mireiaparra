@@ -42,10 +42,13 @@ padding-right: 15px;
     border-radius: 22.5px;
     border: 2px solid $button;
     margin-bottom: 45px;
-    transition: all 300ms;
+    cursor: pointer;
+    transition: transform 1s;
 
     &:hover {
-      transform: scale(1.3);
+      transform: scale(1.5);
+      background-color: $button;
+      color: $tipsBackground;
     }
   }
 }
