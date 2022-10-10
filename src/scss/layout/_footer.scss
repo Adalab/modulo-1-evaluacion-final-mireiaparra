@@ -1,43 +1,89 @@
 .footer {
-    background-color: $footerBackground;
-    font-family: $fontMain;
-    font-size: 16px;
-    color: $tipsBackground;
-    display:flex;
+  background-color: $footerBackground;
+  font-family: $fontMain;
+  color: $tipsBackground;
+
+  &__flex {
+    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    gap: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-top: 65px;
+    padding-bottom: 36px;
 
-    
+    &--link {
+      text-decoration: none;
+      color: $tipsBackground;
+    }
+  }
 
-    &__button {
-        width: 45px;
-        height: 45px;
-        background-color: $tipsBackground;
-        border-radius: 50%;
-        border: 1px solid $tipsBackground;
-        transform: translateY(-50%);
-        object-fit: contain;
+  &__button {
+    width: 45px;
+    height: 45px;
+    background-color: $tipsBackground;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(320%, -50%);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 10px 0 $button inset, 0 0 10px 4px $button;
+    }
+  }
+
+  &__copy {
+    padding-top: 2px;
+    text-transform: lowercase;
+
+    &--heart {
+      color: $button;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    &__flex {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      padding-top: 50px;
+      padding-bottom: 40px;
+      padding-left: 39px;
+      padding-right: 39px;
+
+      &--first,
+      &--second {
+        order: 2;
+      }
     }
 
-    &__nav {
-        text-transform: uppercase;
-        line-height: 30px;
-        padding-bottom: 32px;
-
-        &--link {
-            text-decoration: none;
-            color: $tipsBackground;
-        }
-       
-
-        &--first {
-        padding-bottom: 30px;
-        }
+    &__button {
+      transform: translate(820%, -50%);
     }
 
     &__copy {
-      padding-bottom: 36px;
-        line-height: 30px;
+      order: 1;
+      padding-top: 0;
     }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .footer {
+    &__flex {
+      padding-left: 370px;
+      padding-right: 370px;
+    }
+
+    &__button {
+      transform: translate(1300%, -50%);
+    }
+  }
 }

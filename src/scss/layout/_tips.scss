@@ -1,6 +1,7 @@
 .tips {
   display: flex;
   flex-direction: column;
+  // margin: 61.9px, 15px, 45px, 15px;
   margin-left: 15px;
   margin-right: 15px;
 
@@ -8,14 +9,15 @@
     font-family: $fontMain;
     color: $tipsText;
     font-size: 14px;
+    line-height: 30px;
     text-transform: capitalize;
     margin-top: 62px;
-    margin-bottom: 23px;
   }
 
   &__title {
     font-family: $fontTitles;
     font-size: 24px;
+    line-height: 30px;
     text-transform: capitalize;
     margin-bottom: 20px;
   }
@@ -29,16 +31,22 @@
   }
 
   &__button {
-    height: 45px;
+    height: 45;
     width: 76px;
     font-family: $fontMain;
     font-weight: 500;
     font-size: 20px;
+    line-height: 45px;
     color: $button;
     background-color: $tipsBackground;
     border-radius: 22.5px;
     border: 2px solid $button;
     margin-bottom: 45px;
+    transition: all 300ms;
+
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
 
@@ -46,39 +54,33 @@
   .tips {
     margin-left: 39px;
     margin-right: 39px;
-
+  
+    &__text {
+      margin-top: 37px;
+    }
+  
     &__title {
       font-size: 26px;
+      line-height: 45px;
       margin-bottom: 27px;
     }
-
+  
     &__description {
       font-size: 20px;
       margin-bottom: 27px;
     }
-
+  
     &__button {
+      width: 91px;
       margin-bottom: 60px;
     }
-  }
+}
 }
 
 @media all and (min-width: 1200px) {
   .tips {
-    margin-left: 39px;
-    margin-right: 39px;
-
-    &__text {
-      font-size: 16px;
-      text-transform: capitalize;
-      margin-top: 65px;
-      margin-bottom: 26px;
-    }
-
-    &__title {
-      font-size: 32px;
-      margin-bottom: 32px;
-    }
+    margin-left: 275px;
+    margin-right: 204px;
 
     &__button {
       width: 160px;
