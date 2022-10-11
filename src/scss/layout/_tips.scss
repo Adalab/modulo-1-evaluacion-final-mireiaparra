@@ -57,7 +57,7 @@
 @media all and (min-width: 768px) {
   .tips {
     padding-left: 39px;
-    padding-right: 39px;
+    padding-right: 35px;
 
     &__text {
       margin-top: 37px;
@@ -83,8 +83,17 @@
 
 @media all and (min-width: 1200px) {
   .tips {
-    padding-left: 81.2px;
-    padding-right: 85px;
+    padding-left: 275px;
+    padding-right: 200px;
+
+    &__text {
+      margin-top: 65px;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
 
     &__button {
       width: 160px;
