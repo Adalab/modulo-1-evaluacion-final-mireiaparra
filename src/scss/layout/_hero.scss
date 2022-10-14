@@ -33,7 +33,7 @@
     border: none;
     margin-top: 35.2px;
     margin-bottom: 34px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     animation-name: buttonAnimation;
@@ -72,6 +72,7 @@
     }
 
     &__button {
+      display: flex;
       width: 42.5px;
       height: 45px;
       margin-top: 9px;

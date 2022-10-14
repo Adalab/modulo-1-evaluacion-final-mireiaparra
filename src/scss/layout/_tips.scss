@@ -28,28 +28,27 @@
     color: $description;
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 26px;
+    margin-bottom: 46px;
   }
 
   &__button {
-    height: 45;
-    width: 76px;
+    height: 45px;
+    width: 184px;
     font-family: $fontMain;
     font-weight: 500;
     font-size: 20px;
-    line-height: 45px;
-    color: $button;
-    background-color: $tipsBackground;
+    color: $tipsBackground;
+    background-color: $button;
     border-radius: 22.5px;
-    border: 2px solid $button;
+    border: 1px solid $button;
     margin-bottom: 45px;
     cursor: pointer;
     transition: transform 1s;
 
     &:hover {
       transform: scale(1.5);
-      background-color: $button;
-      color: $tipsBackground;
+      background-color: $tipsBackground;
+      color: $button;
     }
   }
 }
@@ -61,12 +60,14 @@
 
     &__text {
       margin-top: 37px;
+      transform: translateY(220%);
     }
 
     &__title {
       font-size: 26px;
       line-height: 45px;
       margin-bottom: 27px;
+      transform: translateY(-70%);
     }
 
     &__description {
